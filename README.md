@@ -13,6 +13,16 @@ Deze gaan we uitendelijk mergen zodat we een compleet dashboard hebben
 - Dimitri
 
 
+## Gekozen kpi 
+
+- Preston: ---
+- Bismark: ---
+- Joshua: ---
+- Sufi: ---
+- Dimitri ---
+
+
+
 
 ## Links voor leerteam
 
