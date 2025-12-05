@@ -1,10 +1,9 @@
 # dp24
 
-Deze branche is gemaakt voor datapunt 24 
+Deze branche is gemaakt voor datapunt 24
+In deze repository gaat iedereen zijn eigen kpi dashboard uitwerken
+Deze gaan we uitendelijk mergen zodat we een compleet dashboard hebben
 
-In dit document gaan we eerst allemaal individueel ons dashboard realiseren
-
-en uiteindelijk samen mergen in een eind-dashboard 
 
 ## Leerteam
 - Preston
@@ -12,3 +11,13 @@ en uiteindelijk samen mergen in een eind-dashboard
 - Joshua
 - Sufi
 - Dimitri
+
+
+
+## Links voor leerteam
+
+-https://www.flaticon.com/free-icons/favicon Icons
+
+-https://www.pythontutorial.net/pyqt/ Guide 
+
+-https://www.w3schools.com/python/matplotlib_plotting.asp Guide 

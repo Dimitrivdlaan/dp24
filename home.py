@@ -8,14 +8,12 @@ class homedashboard(QWidget):
     
     def initUI(self):
         layout = QVBoxLayout()
-        
-        # H2 Heading
         heading = QLabel("Home Dashboard")
         heading.setFont(QFont("Arial", 24, QFont.Weight.Bold))
         heading.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         layout.addWidget(heading)
         
-        # Rest van je content hier
+       
         
         self.setLayout(layout)
 
