@@ -31,7 +31,7 @@ class homedashboard(QWidget):
         btn_beschikbaarheid = QPushButton("Bekijk details (Beschikbaarheid)")
         btn_beschikbaarheid.setFont(QFont("Arial", 12))
         btn_beschikbaarheid.clicked.connect(self.ga_naar_beschikbaarheid)
-        layout.addWidget(btn_incidenten)
+        layout.addWidget(btn_beschikbaarheid)
 
         btn_bezettingsgraad = QPushButton("Bekijk details (Bezettingsgraad)")
         btn_bezettingsgraad.setFont(QFont("Arial", 12))
