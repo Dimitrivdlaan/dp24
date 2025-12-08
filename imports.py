@@ -1,6 +1,6 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
+from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QGridLayout, QHBoxLayout
 from PyQt6.QtCore import *
-from PyQt6.QtGui import QFont
+from PyQt6.QtGui import QFont, QPixmap
 import pandas as pd
 import numpy as np
 import seaborn as sns
