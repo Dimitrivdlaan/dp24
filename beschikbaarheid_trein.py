@@ -2,8 +2,8 @@ from imports import *
 
 
 class beschikbaarheid(QWidget):
-    def __init__(self):
-        super().__init__()
+    def _init_(self):
+        super()._init_()
         self.initUI()
     
     def initUI(self):
@@ -12,6 +12,12 @@ class beschikbaarheid(QWidget):
         heading.setFont(QFont("Arial", 24, QFont.Weight.Bold))
         heading.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         layout.addWidget(heading)
+        
+        chart_img = QLabel()
+        chart_img.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        pixmap = QPixmap("beschikbaar.png")
+        chart_img.setPixmap(pixmap.scaledToWidth(800, Qt.TransformationMode.SmoothTransformation))
+        layout.addWidget(chart_img)
         
         btn_terug = QPushButton("Terug naar Home")
         btn_terug.setFont(QFont("Arial", 16))
