@@ -1,9 +1,10 @@
 from imports import *
+from pathlib import Path
 
 
 class incidenten(QWidget):
-    def __init__(self):
-        super().__init__()
+    def _init_(self):
+        super()._init_()
         self.initUI()
     
     def initUI(self):
@@ -13,8 +14,18 @@ class incidenten(QWidget):
         heading.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         layout.addWidget(heading)
        
+        chart_img = QLabel()
+        chart_img.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        pixmap = QPixmap("chart_inci.png")
+        chart_img.setPixmap(pixmap.scaledToWidth(800, Qt.TransformationMode.SmoothTransformation))
+        layout.addWidget(chart_img)
+        
         btn_terug = QPushButton("Terug naar Home")
-        btn_terug.setFont(QFont("Arial", 12))
+        btn_terug.setFont(QFont("Arial", 16))
+        btn_terug.setStyleSheet(
+            "background-color: #4CAF50; color: white; border: none; "
+            "border-radius: 12px; padding: 10px 18px;"
+        )
         btn_terug.clicked.connect(self.go_home)
         layout.addWidget(btn_terug)
         self.setLayout(layout)
@@ -27,6 +38,8 @@ class incidenten(QWidget):
             self.hide()
         except Exception as e:
             print("Fout bij terug naar home:", e)
+
+
 
 
 
