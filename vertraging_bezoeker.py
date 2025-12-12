@@ -14,13 +14,14 @@ class vertraging(QWidget):
         heading.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         layout.addWidget(heading)
 
-
-
-
-
+        chart_img = QLabel()
+        chart_img.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        pixmap = QPixmap("curved.png")
+        chart_img.setPixmap(pixmap.scaledToWidth(800, Qt.TransformationMode.SmoothTransformation))
+        layout.addWidget(chart_img)
 
         btn_terug = QPushButton("Terug naar Home")
-        btn_terug.setFont(QFont("Arial", 16))
+        btn_terug.setFont(QFont("Arial", 14))
         btn_terug.setStyleSheet(
             "background-color: #4CAF50; color: white; border: none; "
             "border-radius: 12px; padding: 10px 18px;"
@@ -44,7 +45,3 @@ if __name__ == '__main__':
     window = vertraging()
     window.show()
     sys.exit(app.exec())
-
-
-
-    
