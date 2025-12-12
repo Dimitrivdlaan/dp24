@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QGridLayout, QHBoxLayout
+from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QGridLayout, QHBoxLayout, QTextEdit,QSizePolicy 
 from PyQt6.QtCore import *
 from PyQt6.QtGui import QFont, QPixmap
 import pandas as pd
