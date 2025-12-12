@@ -1,4 +1,5 @@
 from imports import *
+from pathlib import Path
 
 
 class incidenten(QWidget):
@@ -14,7 +15,11 @@ class incidenten(QWidget):
         layout.addWidget(heading)
        
         btn_terug = QPushButton("Terug naar Home")
-        btn_terug.setFont(QFont("Arial", 12))
+        btn_terug.setFont(QFont("Arial", 16))
+        btn_terug.setStyleSheet(
+            "background-color: #4CAF50; color: white; border: none; "
+            "border-radius: 12px; padding: 10px 18px;"
+        )
         btn_terug.clicked.connect(self.go_home)
         layout.addWidget(btn_terug)
         self.setLayout(layout)
